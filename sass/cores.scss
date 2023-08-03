@@ -1,0 +1,61 @@
+$paragraph-cor: white;
+$temporada-color: #425265;
+
+body {
+  background-image: url(./../image/background.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  .paragraph {
+    color: $paragraph-cor;
+  }
+  .links {
+    text-decoration: none;
+    color: $paragraph-cor;
+  }
+  .links:hover {
+    border-bottom: 2px solid #2d3846;
+  }
+  .temporadaOne {
+    background-color: $temporada-color;
+    color: $paragraph-cor;
+    border-bottom: 2px solid #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    border-right: none;
+    border-top: none;
+  }
+  .temporadaOne:hover {
+    background-color: #2d3846;
+  }
+  .temporadaTwo {
+    background-color: $temporada-color;
+    color: $paragraph-cor;
+    border-bottom: 2px solid #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    border-right: none;
+    border-top: none;
+  }
+  .temporadaTwo:hover {
+    background-color: #2d3846;
+  }
+  .temporadaTree {
+    background-color: $temporada-color;
+    color: $paragraph-cor;
+    border-bottom: 2px solid #fff;
+    transition: 0.3s;
+    cursor: pointer;
+    border-right: none;
+    border-top: none;
+  }
+  .temporadaTree:hover {
+    background-color: #2d3846;
+  }
+  .assistir {
+    background: #138ecc;
+    color: $paragraph-cor;
+    .play {
+      filter: invert(1);
+    }
+  }
+}

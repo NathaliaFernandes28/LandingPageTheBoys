@@ -1,0 +1,94 @@
+$width-premier: 100px;
+$height-premier: auto;
+$width-search: 20px;
+$height-search: auto;
+$padding-temporadas: 10px 30px;
+$width-paragraph: 600px;
+$width-theBoys: 20em;
+$font-size: 12px;
+$width-margin-temporada: 20px;
+$margin-theBoys: 30px;
+$width-image: 170px;
+
+body {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .premier {
+      width: $width-premier;
+      height: $height-premier;
+      margin-left: $width-search;
+      margin-top: $width-search;
+    }
+    .search {
+      width: $width-search;
+      height: $height-search;
+      margin-right: $width-search;
+      margin-top: $width-search;
+      cursor: pointer;
+      filter: invert(1);
+    }
+    .links {
+      margin-right: $width-search;
+    }
+  }
+  div {
+    .theBoysLogo {
+      width: $width-theBoys;
+      height: $height-premier;
+      margin-top: $margin-theBoys;
+      margin-left: $margin-theBoys;
+    }
+  }
+  .temporadaOne {
+    padding: $padding-temporadas;
+    margin-left: $width-margin-temporada;
+    margin-top: $width-margin-temporada;
+  }
+  .temporadaTwo {
+    padding: $padding-temporadas;
+  }
+  .temporadaTree {
+    padding: $padding-temporadas;
+  }
+  .paragraph {
+    width: $width-paragraph;
+    font-size: $font-size;
+    line-height: 1.5;
+    margin-top: $width-margin-temporada;
+    margin-left: $width-margin-temporada;
+  }
+  .assistir {
+    padding: 5px;
+    display: flex;
+    margin-left: $width-margin-temporada;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-top: $width-search;
+    cursor: pointer;
+    .play {
+      width: 1.4em;
+      margin-left: 10px;
+    }
+  }
+
+  .filmes {
+    margin: $width-search;
+  }
+
+  .imgFilmes {
+    width: 100px;
+    height: 100px;
+    box-shadow: 12px 0px 32px 2px black;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    object-fit: cover;
+    transform: translateX(140px);
+    transition: all 0.25s ease-in-out;
+  }
+  .imgFilmes:hover {
+    width: $width-image;
+  }
+}
