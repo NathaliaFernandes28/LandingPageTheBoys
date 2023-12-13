@@ -1,22 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
 
 .temporadaOne {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-family: Rubik Bubbles, sans-serif;
 }
 .temporadaTwo {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-family: Rubik Bubbles, sans-serif;
 }
 .temporadaTree {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  font-family: Rubik Bubbles, sans-serif;
 }
 .paragraph {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+  line-height: 1.8;
+}
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.8em;
 }
 .links {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
+}
+.text {
+  text-align: center;
+  width: 50%;
 }

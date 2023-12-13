@@ -1,94 +1,384 @@
-$width-premier: 100px;
-$height-premier: auto;
-$width-search: 20px;
-$height-search: auto;
-$padding-temporadas: 10px 30px;
-$width-paragraph: 600px;
-$width-theBoys: 20em;
-$font-size: 12px;
-$width-margin-temporada: 20px;
-$margin-theBoys: 30px;
-$width-image: 170px;
-
-body {
-  nav {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-image: url(./../image/background.jpg);
+    background-size: 150% 100%;
+    background-repeat: no-repeat;
+  }
+  header {
     .premier {
-      width: $width-premier;
-      height: $height-premier;
-      margin-left: $width-search;
-      margin-top: $width-search;
+      width: 35%;
+      padding-left: 1em;
     }
-    .search {
-      width: $width-search;
-      height: $height-search;
-      margin-right: $width-search;
-      margin-top: $width-search;
-      cursor: pointer;
-      filter: invert(1);
+    nav {
+      display: flex;
+      padding-top: 1em;
+    }
+    .bi-list {
+      color: #fff;
+      margin-left: 6.5em;
+      font-size: 1.6em;
     }
     .links {
-      margin-right: $width-search;
+      display: none;
+    }
+    .search {
+      display: none;
     }
   }
-  div {
-    .theBoysLogo {
-      width: $width-theBoys;
-      height: $height-premier;
-      margin-top: $margin-theBoys;
-      margin-left: $margin-theBoys;
-    }
+  .theBoysLogo {
+    width: 75%;
+    padding-bottom: 1em;
+    padding-top: 3em;
+    margin: 0 0 0 0.5em;
   }
   .temporadaOne {
-    padding: $padding-temporadas;
-    margin-left: $width-margin-temporada;
-    margin-top: $width-margin-temporada;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 40%;
   }
   .temporadaTwo {
-    padding: $padding-temporadas;
+    display: none;
   }
   .temporadaTree {
-    padding: $padding-temporadas;
+    display: none;
   }
   .paragraph {
-    width: $width-paragraph;
-    font-size: $font-size;
-    line-height: 1.5;
-    margin-top: $width-margin-temporada;
-    margin-left: $width-margin-temporada;
+    padding: 1.5em 0 1em 1.5em;
+    max-width: 80%;
+    font-size: 0.7em;
   }
   .assistir {
-    padding: 5px;
     display: flex;
-    margin-left: $width-margin-temporada;
-    width: 120px;
-    height: 40px;
-    border: none;
-    border-bottom: 2px solid white;
-    margin-top: $width-search;
-    cursor: pointer;
-    .play {
-      width: 1.4em;
-      margin-left: 10px;
-    }
+    gap: 1em;
+    justify-items: center;
+    width: 34%;
+    height: 2em;
+    margin-left: 1.6em;
+    margin-bottom: 2.5em;
+    margin-top: 2em;
   }
-
+  .play {
+    padding-left: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .text {
+    font-size: 0.8em;
+  }
   .filmes {
-    margin: $width-search;
+    display: none;
   }
-
   .imgFilmes {
-    width: 100px;
-    height: 100px;
-    box-shadow: 12px 0px 32px 2px black;
-    cursor: pointer;
-    transition: all 0.25s ease-in-out;
-    object-fit: cover;
-    transform: translateX(140px);
-    transition: all 0.25s ease-in-out;
+    width: 18%;
+    padding-top: 2em;
+    margin-bottom: 2em;
   }
   .imgFilmes:hover {
-    width: $width-image;
+    width: 22%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-image: url(./../image/background.jpg);
+    background-size: 150% 100%;
+    background-repeat: no-repeat;
+  }
+  header {
+    .premier {
+      width: 19%;
+      padding: 1.5em 0 1em 1em;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    div {
+      display: flex;
+      margin-top: 1em;
+      margin-right: 2em;
+      gap: 1em;
+    }
+    .links {
+      display: flex;
+      font-size: 0.8em;
+    }
+    .search {
+      display: none;
+    }
+  }
+  .theBoysLogo {
+    width: 70%;
+    padding-bottom: 1em;
+    padding-top: 3em;
+    margin: 0 auto;
+  }
+  .buttons {
+    display: flex;
+  }
+  .temporadaOne {
+    padding: 1em 1em 1em 1em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 21%;
+    font-size: 0.8em;
+  }
+  i {
+    display: none;
+  }
+  .temporadaTwo {
+    padding: 1em 1em 1em 1em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 21%;
+    font-size: 0.8em;
+  }
+  .temporadaTree {
+    padding: 1em 1em 1em 1em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 21%;
+    font-size: 0.8em;
+  }
+  .paragraph {
+    padding: 1.5em 0 1em 1.5em;
+    max-width: 78%;
+    font-size: 0.8em;
+  }
+  .assistir {
+    display: flex;
+    gap: 1em;
+    justify-items: center;
+    width: 24%;
+    height: 2em;
+    margin-left: 1.6em;
+    margin-bottom: 2.5em;
+    margin-top: 2em;
+    padding-right: 5em;
+    padding-bottom: 2.8em;
+    padding-top: 0.5em;
+  }
+  .play {
+    padding-left: 0.5em;
+    width: 3em;
+    height: 2em;
+  }
+  .text {
+    font-size: 1em;
+  }
+  .filmes {
+    display: none;
+  }
+  .imgFilmes {
+    width: 18%;
+    padding-top: 2em;
+    margin-bottom: 2em;
+  }
+  .imgFilmes:hover {
+    width: 25%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-image: url(./../image/background.jpg);
+    background-size: 150% 100%;
+    background-repeat: no-repeat;
+  }
+  header {
+    .premier {
+      width: 15%;
+      padding: 1.5em 0 1em 1em;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    div {
+      display: flex;
+      margin-top: 1em;
+      margin-right: 2em;
+      gap: 1em;
+    }
+    .links {
+      display: flex;
+    }
+    .search {
+      display: none;
+    }
+  }
+  .theBoysLogo {
+    width: 60%;
+    padding-bottom: 1em;
+    padding-top: 3em;
+    margin: 0 auto;
+  }
+  .buttons {
+    display: flex;
+  }
+  .temporadaOne {
+    padding: 1em 1em 1em 1em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 20%;
+    font-size: 1em;
+  }
+  i {
+    display: none;
+  }
+  .temporadaTwo {
+    font-size: 1em;
+    padding: 1em 1em 1em 1em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 20%;
+  }
+  .temporadaTree {
+    font-size: 1em;
+    padding: 1em 1em 1em 1em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 20%;
+    margin-right: 1.5em;
+  }
+  .paragraph {
+    padding: 1.5em 0 1em 1.9em;
+    max-width: 67%;
+    font-size: 0.9em;
+  }
+  .assistir {
+    display: flex;
+    gap: 1em;
+    justify-items: center;
+    width: 18%;
+    height: 2em;
+    margin-left: 1.6em;
+    margin-bottom: 2.5em;
+    margin-top: 2em;
+    padding-right: 5em;
+    padding-bottom: 2.8em;
+    padding-top: 0.5em;
+  }
+  .play {
+    padding-left: 0.5em;
+    width: 3em;
+    height: 2em;
+  }
+  .text {
+    font-size: 1.2em;
+  }
+  .filmes {
+    display: none;
+  }
+  .imgFilmes {
+    width: 18%;
+    padding-top: 2em;
+    margin-bottom: 2em;
+  }
+  .imgFilmes:hover {
+    width: 25%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    background-image: url(./../image/background.jpg);
+    background-size: 120% 100%;
+    background-repeat: no-repeat;
+  }
+  header {
+    .premier {
+      width: 14%;
+      padding: 1.5em 0 1em 1em;
+    }
+    i {
+      display: none;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    div {
+      display: flex;
+      margin-top: 1em;
+      margin-right: 2em;
+      gap: 1em;
+    }
+    .links {
+      display: flex;
+    }
+    .search {
+      display: none;
+    }
+  }
+  .theBoysLogo {
+    width: 40%;
+    padding-bottom: 1em;
+    padding-top: 3em;
+    margin: 0 auto;
+  }
+  .buttons {
+    display: flex;
+    padding-left: 1em;
+  }
+  .temporadaOne {
+    padding: 0.7em 0.7em 0.7em 0.7em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 10%;
+    font-size: 0.8em;
+  }
+
+  .temporadaTwo {
+    padding: 0.7em 0.7em 0.7em 0.7em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 10%;
+    font-size: 0.8em;
+  }
+  .temporadaTree {
+    padding: 0.7em 0.7em 0.7em 0.7em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+    width: 11%;
+    font-size: 0.8em;
+  }
+  .paragraph {
+    margin-left: 2.2em;
+    margin-top: 2em;
+    max-width: 50%;
+    font-size: 0.8em;
+  }
+  .assistir {
+    display: flex;
+    gap: 1em;
+    justify-items: center;
+    width: 13%;
+    height: 2em;
+    margin-left: 2em;
+    margin-bottom: 2.5em;
+    margin-top: 2em;
+    padding-right: 5em;
+    padding-bottom: 2.8em;
+    padding-top: 0.5em;
+    cursor: pointer;
+  }
+  .play {
+    padding-left: 0.5em;
+    width: 3em;
+    height: 2em;
+  }
+  .text {
+    font-size: 1.2em;
+  }
+  .filmes {
+    display: none;
+  }
+  .imgFilmes {
+    width: 18%;
+    padding-top: 2em;
+    margin-bottom: 2em;
+  }
+  .imgFilmes:hover {
+    width: 25%;
   }
 }

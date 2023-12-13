@@ -54,6 +54,7 @@ body {
   .assistir {
     background: #138ecc;
     color: $paragraph-cor;
+    border-bottom: 1px solid $paragraph-cor;
     .play {
       filter: invert(1);
     }

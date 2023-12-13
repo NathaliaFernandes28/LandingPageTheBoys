@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <title>Landing Page - The Boys</title>
   </head>
   <body>
@@ -11,6 +15,7 @@
       <nav>
         <img class="premier" src="./image/logo.png" alt="LogoPremier" />
         <div>
+          <i class="bi bi-list" onclick="openNav()"></i>
           <a class="links" href="#">Home</a>
           <a class="links" href="#">Filmes</a>
           <a class="links" href="#">Séries</a>
@@ -19,39 +24,42 @@
         </div>
       </nav>
     </header>
-    <div>
-      <img
-        class="theBoysLogo"
-        src="./image/theboysLogo.png"
-        alt="LogoTheboys"
-      />
-    </div>
-    <section class="buttons">
-      <button class="temporadaOne">Temporada 1</button>
-      <button class="temporadaTwo">Temporada 2</button>
-      <button class="temporadaTree">Temporada 3</button>
-    </section>
-    <p class="paragraph">
-      Tem sido um ano calmo. O Capitão Pátria está controlado. Bruto trabalha
-      para o governo, supervisionado por ninguém menos que o Hughie, mas os dois
-      estão loucos para trocar essa paz e tranquilidade por briga e confusão.
-      Então, quando os Boys ficam sabendo de uma misteriosa arma Anti-Herói,
-      eles enfrentam os Sete e partem pra briga, enquanto investigam a lenda do
-      primeiro super-herói: o Soldier Boy.
-    </p>
-    <button class="assistir">
-      <img class="play" src="./image/botao-play.png" alt="BotãoPlay" />
-      <id>
-        <p>Assistir</p>
-        <p>Episódio 7</p>
-      </id>
-    </button>
-    <section class="filmes">
-      <img class="imgFilmes" src="./image/trem.jpg" alt="trem" />
-      <img class="imgFilmes" src="./image/capita.jpg" alt="capita" />
-      <img class="imgFilmes" src="./image/estrela.jpg" alt="Estrela" />
-      <img class="imgFilmes" src="./image/ds.jpg" alt="ds" />
-      <img class="imgFilmes" src="./image/os7.jpg" alt="os7" />
-    </section>
+    <main>
+      <div>
+        <img
+          class="theBoysLogo"
+          src="./image/theboysLogo.png"
+          alt="LogoTheboys"
+        />
+      </div>
+      <section class="buttons">
+        <button class="temporadaOne">Temporada 1</button>
+        <button class="temporadaTwo">Temporada 2</button>
+        <button class="temporadaTree">Temporada 3</button>
+      </section>
+      <p class="paragraph">
+        Tem sido um ano calmo. O Capitão Pátria está controlado. Bruto trabalha
+        para o governo, supervisionado por ninguém menos que o Hughie, mas os
+        dois estão loucos para trocar essa paz e tranquilidade por briga e
+        confusão. Então, quando os Boys ficam sabendo de uma misteriosa arma
+        Anti-Herói, eles enfrentam os Sete e partem pra briga, enquanto
+        investigam a lenda do primeiro super-herói: o Soldier Boy.
+      </p>
+      <button class="assistir">
+        <img class="play" src="./image/botao-play.png" alt="BotãoPlay" />
+        <div>
+          <p class="text">Assistir</p>
+          <p class="text">Episódio7</p>
+        </div>
+      </button>
+      <section class="filmes">
+        <img class="imgFilmes" src="./image/trem.jpg" alt="trem" />
+        <img class="imgFilmes" src="./image/capita.jpg" alt="capita" />
+        <img class="imgFilmes" src="./image/estrela.jpg" alt="Estrela" />
+        <img class="imgFilmes" src="./image/ds.jpg" alt="ds" />
+        <img class="imgFilmes" src="./image/os7.jpg" alt="os7" />
+      </section>
+    </main>
+    <script src="./index.js"></script>
   </body>
 </html>
